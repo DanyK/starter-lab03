@@ -28,4 +28,16 @@ class Bingo extends Application {
 
         $this->render();
     }
+    
+    function wisdom() {
+        $this->data['pagebody'] = 'justone';    // this is the view we want shown
+        // build the list of authors, to pass on to our view
+        $source = $this->quotes->get(6);
+        
+        $this->data['mug'] = $source['mug'];
+        $this->data['who'] = $source['who'];
+        $this->data['what'] = $source['what'];
+
+        $this->render();
+    }
 }
