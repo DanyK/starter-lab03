@@ -43,15 +43,9 @@ class First extends Application {
         $this->data['mug'] = $source['mug'];
         $this->data['who'] = $source['who'];
         $this->data['what'] = $source['what'];
-        //$authors = array();
-        //foreach ($source as $record) {
-         //   $authors[] = array('who' => $record['who'], 'mug' => $record['mug'], 'href' => $record['where']);
-        //}
-        //$this->data['authors'] = $authors;
-
+       
         $this->render();
     }
-
 }
 
 /* End of file Welcome.php */
