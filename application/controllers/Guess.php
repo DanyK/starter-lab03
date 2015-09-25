@@ -18,8 +18,8 @@ class Guess extends Application {
     }
     
     function index() {
-        $this->data['pagebody'] = 'justone';    // this is the view we want shown
-        // build the list of authors, to pass on to our view
+        $this->data['pagebody'] = 'justone';    
+        
         $source = $this->quotes->get(4);
         
         $this->data['mug'] = $source['mug'];

@@ -38,20 +38,33 @@
 |
 */
 
+//This route indicates which controller class should be loaded. In this case is the 
+//"welcome" class.
 $route['default_controller'] = "welcome";
 
+//This route indicates which controller class should be loaded if the requested controller
+//is not found.
 $route['404_override'] = '';
 
+//A URL containing the word "sleep" in the first segment will be remapped to he "first" class, 
+//and the "zzz" method.
 $route['sleep'] = 'first/zzz';
 
+//A URL with "lock" as the first segment, and anything in the second and third will be remapped 
+//to the "welcome" class and the "shucks" method.
 $route['lock/(:any)/(:any)'] = 'welcome/shucks';
 
+//A URL with "show" as the first segment, and a number in the second will be remapped to the 
+//"first" class and the "gimme" method passing in the match as a variable to the function.
 $route['show/(:num)'] = 'first/gimme/$1';
 
+//A URL containing the word "dunno" in the first segment will be remapped to the "guess" class.
 $route['dunno'] = 'guess';
 
+//A regular expression route will be remapped to the "bingo" class.
 $route['([a-zA-Z]{4})/bingo'] = 'bingo';
 
+//A regular expression route will be remapped to the "bingo" class and the "wisdom" method. 
 $route['(comp\d{4})/(.*)'] = 'bingo/wisdom';
 
 /* End of file routes.php */

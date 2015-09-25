@@ -1,10 +1,7 @@
 <?php
 
 /**
- * Our homepage. Show a table of all the author pictures. Clicking on one should show their quote.
- * Our quotes model has been autoloaded, because we use it everywhere.
- * 
- * controllers/Welcome.php
+ * controllers/Last.php
  *
  * ------------------------------------------------------------------------
  */
@@ -14,13 +11,9 @@ class Last extends Application {
         parent::__construct();
     }
 
-    //-------------------------------------------------------------
-    //  The normal pages
-    //-------------------------------------------------------------
-
     function index() {
-        $this->data['pagebody'] = 'justone';    // this is the view we want shown
-        // build the list of authors, to pass on to our view
+        $this->data['pagebody'] = 'justone';    
+        
         $source = $this->quotes->last();
         
         $this->data['mug'] = $source['mug'];
@@ -31,5 +24,5 @@ class Last extends Application {
     }
 }
 
-/* End of file Welcome.php */
-/* Location: application/controllers/Welcome.php */
+/* End of file Last.php */
+/* Location: application/controllers/Last.php */

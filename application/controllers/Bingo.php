@@ -18,8 +18,8 @@ class Bingo extends Application {
     }
     
     function index() {
-        $this->data['pagebody'] = 'justone';    // this is the view we want shown
-        // build the list of authors, to pass on to our view
+        $this->data['pagebody'] = 'justone';   
+        
         $source = $this->quotes->get(5);
         
         $this->data['mug'] = $source['mug'];
@@ -30,8 +30,8 @@ class Bingo extends Application {
     }
     
     function wisdom() {
-        $this->data['pagebody'] = 'justone';    // this is the view we want shown
-        // build the list of authors, to pass on to our view
+        $this->data['pagebody'] = 'justone';    
+        
         $source = $this->quotes->get(6);
         
         $this->data['mug'] = $source['mug'];
