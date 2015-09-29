@@ -2,7 +2,7 @@
 Lab 3 Starter Webapp - Quotes
 #############################
 
-This is the starter webapp for Comp4711 Tutorial/Lab 3.
+This is the starter webapp for Comp4711 Tutorial/Lab 3. woohoo
 
 It is purposefully broken.
 
